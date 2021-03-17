@@ -21,7 +21,6 @@ def tweet_url2():
 def tweet_url3():
     blogTweet.upload(envlist)
 
-
 if __name__ == "__main__":
     print('done clock.py')
     twische.start()
