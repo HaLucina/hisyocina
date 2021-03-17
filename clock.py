@@ -9,7 +9,7 @@ envlist = [os.environ["CONSUMER_KEY"],
 	os.environ["ACCESS_TOKEN_SECRET"]]
 
 #twische.add_jobだと動かないのでデコードを使う
-@twische.scheduled_job('cron', hour=2, minute=42)
+@twische.scheduled_job('cron', hour=2, minute=47)
 def test():
     blogTweet.upload(envlist)
 
