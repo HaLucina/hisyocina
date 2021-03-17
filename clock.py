@@ -1,6 +1,7 @@
 from apscheduler.schedulers.blocking import BlockingScheduler
 import os
 import blogTweet
+import datetime
 
 twische = BlockingScheduler()
 envlist = [os.environ["CONSUMER_KEY"],
@@ -9,9 +10,9 @@ envlist = [os.environ["CONSUMER_KEY"],
 	os.environ["ACCESS_TOKEN_SECRET"]]
 
 #twische.add_jobだと動かないのでデコードを使う
-@twische.scheduled_job('cron', hour=2, minute=52)
+@twische.scheduled_job('cron', hour=3, minute=0)
 def test():
-    print('done test')
+    
     blogTweet.upload(envlist)
 
 @twische.scheduled_job('cron', hour=7)
@@ -27,5 +28,7 @@ def tweet_url3():
     blogTweet.upload(envlist)
 
 if __name__ == "__main__":
-    print('done clock.py')
+    timestamp = datetime.datetime.today()
+    timestamp = str(timestamp.strftime("%Y/%m/%d %H:%M"))
+    print('done clock.py >>> ' + timestamp)
     twische.start()
