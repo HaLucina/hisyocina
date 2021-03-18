@@ -20,7 +20,7 @@ def upload(envs):
     timestamp = datetime.datetime.today()
     timestamp = str(timestamp.strftime("%Y/%m/%d %H:%M"))
 
-    params = {"status": '@_HaLucina' + '\n' + timestamp + '\n' + 'https://hackheatharu.xyz/' + randomtweet + '/'} 
+    params = {"status": timestamp + '\n' + 'https://hackheatharu.xyz/' + randomtweet + '/'} 
     req = twitter.post("https://api.twitter.com/1.1/statuses/update.json", params = params)
 
 if __name__ == "__main__":
