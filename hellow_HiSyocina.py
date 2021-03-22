@@ -19,9 +19,11 @@ def activate(envs):
 if __name__ == "__main__":
     timestamp = datetime.datetime.today()
     timestamp = str(timestamp.strftime("%Y/%m/%d %H:%M"))
-    print('done hellow_HiSgocina.py >>> ' + timestamp)
 
-    activate(os.environ["CONSUMER_KEY"],
+    envlist = [os.environ["CONSUMER_KEY"],
 	os.environ["CONSUMER_SECRET"],
 	os.environ["ACCESS_TOKEN_KEY"],
-	os.environ["ACCESS_TOKEN_SECRET"])
+	os.environ["ACCESS_TOKEN_SECRET"]]
+    activate(envlist)
+
+    print('done hellow_HiSgocina.py >>> ' + timestamp)
