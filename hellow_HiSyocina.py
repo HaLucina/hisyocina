@@ -13,7 +13,7 @@ def activate(envs):
     timestamp = datetime.datetime.today()
     timestamp = str(timestamp.strftime("%Y/%m/%d %H:%M"))
 
-    params = {"status": timestamp + ' Githubへのアップロード成功' + '\n' + '秘書シナを起動します(\';\')'} 
+    params = {"status": timestamp + ' から約30分間' + '\n' + '秘書シナを起動します(\';\')'} 
     req = twitter.post("https://api.twitter.com/1.1/statuses/update.json", params = params)
 
 if __name__ == "__main__":
@@ -24,6 +24,7 @@ if __name__ == "__main__":
 	os.environ["CONSUMER_SECRET"],
 	os.environ["ACCESS_TOKEN_KEY"],
 	os.environ["ACCESS_TOKEN_SECRET"]]
+
     activate(envlist)
 
     print('done hellow_HiSgocina.py >>> ' + timestamp)

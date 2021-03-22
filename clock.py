@@ -1,6 +1,5 @@
 from apscheduler.schedulers.blocking import BlockingScheduler
 import os
-import hellow_HiSyocina
 import blogTweet
 import datetime
 
