@@ -17,7 +17,7 @@ def activate(envs):
     req = twitter.post("https://api.twitter.com/1.1/statuses/update.json", params = params)
 
 if __name__ == "__main__":
-
+    print('done hellow_HiSgocina.py >>> ' + timestamp)
     activate(os.environ["CONSUMER_KEY"],
 	os.environ["CONSUMER_SECRET"],
 	os.environ["ACCESS_TOKEN_KEY"],

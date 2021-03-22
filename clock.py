@@ -38,5 +38,3 @@ if __name__ == "__main__":
     timestamp = str(timestamp.strftime("%Y/%m/%d %H:%M"))
     print('done clock.py >>> ' + timestamp)
     twische.start()
-    hellow_HiSyocina.activate(envlist)
-    
