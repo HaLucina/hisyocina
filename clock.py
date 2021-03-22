@@ -15,15 +15,21 @@ envlist = [os.environ["CONSUMER_KEY"],
 #def test():
 #    blogTweet.upload(envlist)
 
-@twische.scheduled_job('cron', hour=7)
+# $ sleep 30 && curl https://hisyocina.herokuapp.com/ping Daily at 9:00 PM UTC
+# $ curl https://hisyocina.herokuapp.com/ping Daily at 9:00 PM UTC
+@twische.scheduled_job('cron', hour=6, minute=45)
 def tweet_url1():
     blogTweet.upload(envlist)
 
-@twische.scheduled_job('cron', hour=12)
+# $ sleep 30 && curl https://hisyocina.herokuapp.com/ping Daily at 2:00 AM UTC
+# $ curl https://hisyocina.herokuapp.com/ping Daily at 2:30 AM UT
+@twische.scheduled_job('cron', hour=11, minute=45)
 def tweet_url2():
     blogTweet.upload(envlist)
 
-@twische.scheduled_job('cron', hour=20)
+# $ sleep 30 && curl https://hisyocina.herokuapp.com/ping Daily at 11:00 AM UTC
+# $ curl https://hisyocina.herokuapp.com/ping Daily at 11:30 AM UTC
+@twische.scheduled_job('cron', hour=20, minute=45)
 def tweet_url3():
     blogTweet.upload(envlist)
 
