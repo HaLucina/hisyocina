@@ -71,7 +71,7 @@ stress-is-more-scary-than-disease
 those-who-always-need-fine-numbers-are-incompetent
 should-coming-of-age-day-will-be-discontinued
 failure-stories-are-more-useful-than-success-stories
-rescue workers are the true heroes
+rescue-workers-are-the-true-heroes
 hate-work-do-just-for-walk-away-from-responsibility
 what-is-being-said-more-important-than-who-said-it
 only-about-zero-point-five-percentage-of-people-hate-you
@@ -108,6 +108,6 @@ how-to-make-linktree
 github-new-repository-creation-and-measures-when-push-is-not-possible
 lubunutu-automatically-starts-vim-etc-when-pc-starts
 with-git-it-can-publish-code-and-manage-it-on-github
-quoted rts will be mandatory during the presidential campaign
+quoted-rts-will-be-mandatory-during-the-presidential-campaign
 fix-when-the-cursor-appears-in-the-browser-and-you-cannot-scroll
 what-are-yield-and-generator-from-python

@@ -7,8 +7,6 @@ import datetime
 import json
 from pathlib import Path
 
-
-
 def upload(envs):
     twitter = OAuth1Session(envs[0], envs[1], envs[2], envs[3])
 
